@@ -1,0 +1,33 @@
+{
+  "name": "ai-solution-builder",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "test:smoke": "node scripts/smoke.mjs",
+    "db:init": "node scripts/init-db.mjs",
+    "db:seed": "node prisma/seed.mjs"
+  },
+  "dependencies": {
+    "next": "15.5.27",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=22.23.0"
+  },
+  "overrides": {
+    "postcss": "^8.5.23"
+  }
+}
